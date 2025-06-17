@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Store - Products</title>
+    <link rel="stylesheet" href="product-styles.css"> <!-- Link to product-specific stylesheet -->
+    <script src="filter.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Our Products</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Filter Section --> 
+     <section id="filter"> 
+        <h2>Filter Products</h2>
+        <form id="filter-form">
+            <label for="category">Category:</label>
+            <select id="category" name="category">
+                <option value="all">All</option>
+                <option value="Womens shirts">Womens Shirts</option>
+                <option value="Womens tshirts">Womens T-Shirts</option>
+                <option value="Womens jeans">Womens Jeans</option>
+                <option value="Womens sunglasses">Womens Sunglasses</option>
+                <option value="Womens sneakers">Womens Sneakers</option>
+                <option value="Womens casuals">Womens Casuals</option>
+                <option value="Mens shirts">Mens Shirts</option>
+                <option value="Mens tshirts">Mens T-Shirts</option>
+                <option value="Mens jeans">Mens Jeans</option>
+                <option value="Mens sunglasses">Mens Sunglasses</option>
+                <option value="Mens sneakers">Mens Sneakers</option>
+                <option value="Mens casuals">Mens Casuals</option>
+            </select>
+
+            <label for="price">Price Range:</label>
+            <select id="price" name="price">
+                <option value="all">All</option>
+                <option value="low">Under $50</option>
+                <option value="medium">$50 - $100</option>
+                <option value="high">Above $100</option>
+            </select>
+
+            <button type="button" id="apply-filters">Apply Filters</button>
+            <button type="button" id="clear-filters">Clear Filters</button> <!-- Added Clear Filters button -->
+        </form>
+    </section>
+
+    <!-- Product List Section -->
+    <section id="product-list">
+        <h2>Explore Our Collection</h2>
+        <p>Find the perfect product for every event.</p>
+
+        <!-- Women's Collection -->
+        <div class="product-category" id="Women1">
+            <h3>Women's Collection</h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="Womens shirts" data-price="medium">
+                    <img src="Product images/women shirt.jpg" alt="Stylish Womens Shirt">
+                    <h3>Stylish Womens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens tshirts" data-price="low">
+                    <img src="Product images/women tshirt.jpg" alt="Comfortable Womens T-Shirt">
+                    <h3>Comfortable Womens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens jeans" data-price="high">
+                    <img src="Product images/women jeans.jpg" alt="Classic Womens Jeans">
+                    <h3>Classic Womens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens casuals" data-price="high">
+                    <img src="Product images/women casuals.jpg" alt="Classic Mens Jeans">
+                    <h3>Womens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens sunglasses" data-price="medium">
+                    <img src="Product images/women sunglasses.jpg" alt="Stylish Womens Sunglasses">
+                    <h3>Stylish Womens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens sneakers" data-price="low">
+                    <img src="Product images/women sneaker.jpg" alt="Comfortable Womens Sneakers">
+                    <h3>Comfortable Womens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens casuals" data-price="low">
+                    <img src="Product images/women casual 1.jpg" alt="Womens Casual">
+                    <h3>Womens Casuals</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens casuals" data-price="low">
+                    <img src="Product images/women casual 2.jpg" alt="Womens Casual">
+                    <h3>Womens Casuals</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens casuals" data-price="low">
+                    <img src="Product images/women casual 3.jpg" alt="Womens Casual">
+                    <h3>Womens Casuals</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens casuals" data-price="low">
+                    <img src="Product images/women casual 4.jpg" alt="Womens Casual">
+                    <h3>Womens Casuals</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens casuals" data-price="low">
+                    <img src="Product images/women casual 5.jpg" alt="Womens Casual">
+                    <h3>Womens Casuals</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens shirts" data-price="medium">
+                    <img src="Product images/women shirt1.jpg" alt="Stylish Womens Shirt">
+                    <h3>Stylish Womens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens shirts" data-price="medium">
+                    <img src="Product images/women shirt2.jpg" alt="Stylish Womens Shirt">
+                    <h3>Stylish Womens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens shirts" data-price="medium">
+                    <img src="Product images/women shirt3.jpg" alt="Stylish Womens Shirt">
+                    <h3>Stylish Womens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens shirts" data-price="medium">
+                    <img src="Product images/women shirt4.jpg" alt="Stylish Womens Shirt">
+                    <h3>Stylish Womens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens shirts" data-price="medium">
+                    <img src="Product images/women shirt5.jpg" alt="Stylish Womens Shirt">
+                    <h3>Stylish Womens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens tshirts" data-price="low">
+                    <img src="Product images/women tshirt1.jpg" alt="Comfortable Womens T-Shirt">
+                    <h3>Comfortable Womens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens tshirts" data-price="low">
+                    <img src="Product images/women tshirt2.jpg" alt="Comfortable Womens T-Shirt">
+                    <h3>Comfortable Womens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens tshirts" data-price="low">
+                    <img src="Product images/women tshirt3.jpg" alt="Comfortable Womens T-Shirt">
+                    <h3>Comfortable Womens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens tshirts" data-price="low">
+                    <img src="Product images/women tshirt4.jpg" alt="Comfortable Womens T-Shirt">
+                    <h3>Comfortable Womens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens tshirts" data-price="low">
+                    <img src="Product images/women tshirt5.jpg" alt="Comfortable Womens T-Shirt">
+                    <h3>Comfortable Womens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens jeans" data-price="high">
+                    <img src="Product images/women jeans1.jpg" alt="Classic Womens Jeans">
+                    <h3>Classic Womens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens jeans" data-price="high">
+                    <img src="Product images/women jeans2.jpg" alt="Classic Womens Jeans">
+                    <h3>Classic Womens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens jeans" data-price="high">
+                    <img src="Product images/women jeans3.jpg" alt="Classic Womens Jeans">
+                    <h3>Classic Womens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens jeans" data-price="high">
+                    <img src="Product images/women jeans4.jpg" alt="Classic Womens Jeans">
+                    <h3>Classic Womens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens jeans" data-price="high">
+                    <img src="Product images/women jeans5.jpg" alt="Classic Womens Jeans">
+                    <h3>Classic Womens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens sunglasses" data-price="medium">
+                    <img src="Product images/women sunglasses1.jpg" alt="Stylish Womens Sunglasses">
+                    <h3>Stylish Womens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sunglasses" data-price="medium">
+                    <img src="Product images/women sunglasses2.jpg" alt="Stylish Womens Sunglasses">
+                    <h3>Stylish Womens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sunglasses" data-price="medium">
+                    <img src="Product images/women sunglasses3.jpg" alt="Stylish Womens Sunglasses">
+                    <h3>Stylish Womens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sunglasses" data-price="medium">
+                    <img src="Product images/women sunglasses4.jpg" alt="Stylish Womens Sunglasses">
+                    <h3>Stylish Womens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sunglasses" data-price="medium">
+                    <img src="Product images/women sunglasses5.jpg" alt="Stylish Womens Sunglasses">
+                    <h3>Stylish Womens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Womens sneakers" data-price="low">
+                    <img src="Product images/women sneaker1.jpg" alt="Comfortable Womens Sneakers">
+                    <h3>Comfortable Womens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sneakers" data-price="low">
+                    <img src="Product images/women sneaker2.jpg" alt="Comfortable Womens Sneakers">
+                    <h3>Comfortable Womens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sneakers" data-price="low">
+                    <img src="Product images/women sneaker3.jpg" alt="Comfortable Womens Sneakers">
+                    <h3>Comfortable Womens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sneakers" data-price="low">
+                    <img src="Product images/women sneaker4.jpg" alt="Comfortable Womens Sneakers">
+                    <h3>Comfortable Womens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div><div class="product-card" data-category="Womens sneakers" data-price="low">
+                    <img src="Product images/women sneaker5.jpg" alt="Comfortable Womens Sneakers">
+                    <h3>Comfortable Womens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Men's Collection -->
+        <div class="product-category"id="Men1">
+            <h3>Men's Collection</h3>
+            <div class="product-grid">
+                <div class="product-card" data-category="Mens shirts" data-price="medium">
+                    <img src="Product images/mens shirts.jpg" alt="Stylish Mens Shirt">
+                    <h3>Stylish Mens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens tshirts" data-price="low">
+                    <img src="Product images/mens tshirts.jpg" alt="Comfortable Mens T-Shirt">
+                    <h3>Comfortable Mens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens jeans" data-price="high">
+                    <img src="Product images/mens jeans.jpg" alt="Classic Mens Jeans">
+                    <h3>Classic Mens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens casuals" data-price="high">
+                    <img src="Product images/mens casuals.jpg" alt="Classic Mens Casuals">
+                    <h3>Mens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sunglasses" data-price="medium">
+                    <img src="Product images/mens sunglasses.jpg" alt="Stylish Mens Sunglasses">
+                    <h3>Stylish Mens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sneakers" data-price="low">
+                    <img src="Product images/mens sneakers.jpg" alt="Comfortable Mens Sneakers">
+                    <h3>Comfortable Mens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens shirts" data-price="medium">
+                    <img src="Product images/mens shirt1.jpg" alt="Stylish Mens Shirt">
+                    <h3>Stylish Mens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens shirts" data-price="medium">
+                    <img src="Product images/mens shirt2.jpg" alt="Stylish Mens Shirt">
+                    <h3>Stylish Mens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens shirts" data-price="medium">
+                    <img src="Product images/mens shirt3.jpg" alt="Stylish Mens Shirt">
+                    <h3>Stylish Mens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens shirts" data-price="medium">
+                    <img src="Product images/mens shirt4.jpg" alt="Stylish Mens Shirt">
+                    <h3>Stylish Mens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens shirts" data-price="medium">
+                    <img src="Product images/mens shirt5.jpg" alt="Stylish Mens Shirt">
+                    <h3>Stylish Mens Shirt</h3>
+                    <p>Perfect for formal and casual occasions.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens tshirts" data-price="low">
+                    <img src="Product images/mens tshirts1.jpg" alt="Comfortable Mens T-Shirt">
+                    <h3>Comfortable Mens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens tshirts" data-price="low">
+                    <img src="Product images/mens tshirts2.jpg" alt="Comfortable Mens T-Shirt">
+                    <h3>Comfortable Mens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens tshirts" data-price="low">
+                    <img src="Product images/mens tshirts3.jpg" alt="Comfortable Mens T-Shirt">
+                    <h3>Comfortable Mens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens tshirts" data-price="low">
+                    <img src="Product images/mens tshirts4.jpg" alt="Comfortable Mens T-Shirt">
+                    <h3>Comfortable Mens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens tshirts" data-price="low">
+                    <img src="Product images/mens tshirts5.jpg" alt="Comfortable Mens T-Shirt">
+                    <h3>Comfortable Mens T-Shirt</h3>
+                    <p>Soft fabric for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens jeans" data-price="high">
+                    <img src="Product images/mens jeans1.jpg" alt="Classic Mens Jeans">
+                    <h3>Classic Mens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens jeans" data-price="high">
+                    <img src="Product images/mens jeans2.jpg" alt="Classic Mens Jeans">
+                    <h3>Classic Mens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens jeans" data-price="high">
+                    <img src="Product images/mens jeans3.jpg" alt="Classic Mens Jeans">
+                    <h3>Classic Mens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens jeans" data-price="high">
+                    <img src="Product images/mens jeans4.jpg" alt="Classic Mens Jeans">
+                    <h3>Classic Mens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens jeans" data-price="high">
+                    <img src="Product images/mens jeans5.jpg" alt="Classic Mens Jeans">
+                    <h3>Classic Mens Jeans</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens casuals" data-price="high">
+                    <img src="Product images/mens casuals1.jpg" alt="Classic Mens Casuals">
+                    <h3>Mens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens casuals" data-price="high">
+                    <img src="Product images/mens casuals2.jpg" alt="Classic Mens Casuals">
+                    <h3>Mens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens casuals" data-price="high">
+                    <img src="Product images/mens casuals3.jpg" alt="Classic Mens Casuals">
+                    <h3>Mens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens casuals" data-price="high">
+                    <img src="Product images/mens casuals4.jpg" alt="Classic Mens Casuals">
+                    <h3>Mens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens casuals" data-price="high">
+                    <img src="Product images/mens casuals5.jpg" alt="Classic Mens Casuals">
+                    <h3>Mens Casuals</h3>
+                    <p>Durable and stylish for all seasons.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sunglasses" data-price="medium">
+                    <img src="Product images/mens sunglasses1.jpg" alt="Stylish Mens Sunglasses">
+                    <h3>Stylish Mens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sunglasses" data-price="medium">
+                    <img src="Product images/mens sunglasses2.jpg" alt="Stylish Mens Sunglasses">
+                    <h3>Stylish Mens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sunglasses" data-price="medium">
+                    <img src="Product images/mens sunglasses3.jpg" alt="Stylish Mens Sunglasses">
+                    <h3>Stylish Mens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sunglasses" data-price="medium">
+                    <img src="Product images/mens sunglasses4.jpg" alt="Stylish Mens Sunglasses">
+                    <h3>Stylish Mens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sunglasses" data-price="medium">
+                    <img src="Product images/mens sunglasses5.jpg" alt="Stylish Mens Sunglasses">
+                    <h3>Stylish Mens Sunglasses</h3>
+                    <p>Perfect for sunny days.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sneakers" data-price="low">
+                    <img src="Product images/mens sneakers1.jpg" alt="Comfortable Mens Sneakers">
+                    <h3>Comfortable Mens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sneakers" data-price="low">
+                    <img src="Product images/mens sneakers2.jpg" alt="Comfortable Mens Sneakers">
+                    <h3>Comfortable Mens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sneakers" data-price="low">
+                    <img src="Product images/mens sneakers3.jpg" alt="Comfortable Mens Sneakers">
+                    <h3>Comfortable Mens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sneakers" data-price="low">
+                    <img src="Product images/mens sneakers4.jpg" alt="Comfortable Mens Sneakers">
+                    <h3>Comfortable Mens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+                <div class="product-card" data-category="Mens sneakers" data-price="low">
+                    <img src="Product images/mens sneakers5.jpg" alt="Comfortable Mens Sneakers">
+                    <h3>Comfortable Mens Sneakers</h3>
+                    <p>Perfect for everyday wear.</p>
+                    <!-- <button>Buy Now</button> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fashion Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
